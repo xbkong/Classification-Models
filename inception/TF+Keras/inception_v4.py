@@ -128,19 +128,19 @@ def inception_v4(output_classes=1000, include_top_layer=False, dropout_prob=0.8)
     x = inception_base(inp)
 
     # 4 Inception-A blocks
-    for i in range(4):
+    for _ in range(4):
         x = inception_a(x)
     # Reduction-A
     x = reduction_a(x)
 
     # 7 Inception-B blocks
-    for i in range(7):
+    for _ in range(7):
         x = inception_b(x)
     # Reduction-B
     x = reduction_b(x)
 
     # 3 Inception-C blocks
-    for i in range(3):
+    for _ in range(3):
         x = inception_c(x)
 
     # Add pool, dropout, fc.
