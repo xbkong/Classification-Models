@@ -1,6 +1,6 @@
 # ResNet Models
 
-ResNet34, 101, and 152
+ResNet-34, ResNet-101, and ResNet-152
 
 References:
 
