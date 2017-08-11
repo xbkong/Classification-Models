@@ -182,5 +182,3 @@ def inception_v4(input_shape, output_classes=1001, include_top_layer=False, drop
         x = Dense(output_classes, activation='softmax')(x)
 
     return Model(inp, x)
-
-a = inception_v4((299, 299, 3))
