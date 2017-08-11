@@ -1,4 +1,6 @@
-#ResNet Models
+# ResNet Models
+
+ResNet34, 101, and 152
 
 References:
 
